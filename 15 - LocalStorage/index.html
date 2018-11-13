@@ -40,12 +40,12 @@
       done: false
     }
     items.push(item);
-    displaylist(items, itemsList);
+    // displaylist(items, itemsList);
     this.reset();
     localStorage.setItem('items', JSON.stringify(items));
   }
 
-  function displaylist(plates = [], plateList){
+ /* function displaylist(plates = [], plateList){
     plateList.innerHTML = plates.map((plate, i) =>{
       return `
       <li>
@@ -65,10 +65,10 @@
     localStorage.setItem('items', JSON.stringify(items));
     displaylist(items, itemsList);
   }
-
+*/
   addItems.addEventListener('submit', addItem)
-  itemsList.addEventListener('click', toggleDone)
-  displaylist(items, itemsList);
+  // itemsList.addEventListener('click', toggleDone)
+  // displaylist(items, itemsList);
   
 </script>
 
